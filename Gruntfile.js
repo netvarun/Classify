@@ -241,7 +241,8 @@ module.exports = function(grunt) {
 						url : "<%= pkg.homepage %>",
 						options : {
 							paths : "src/",
-							outdir : "docs/yuidoc/"
+							outdir : "docs/yuidoc/",
+							themedir : "docs/theme/"
 						}
 					}
 				},
