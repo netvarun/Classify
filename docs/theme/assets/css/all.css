@@ -1,0 +1,218 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	background: #fff;
+	color: #000;
+	font: normal 14px/22px Helvetica Neue, Helvetica, Arial;
+	height: 100%;
+}
+
+code, pre, tt {
+	font: normal 12px/18px Consolas, Monaco, "Lucida Console", monospace;
+	white-space: pre;
+}
+code {
+	padding: 1px 2px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+p {
+	display: block;
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 18px;
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.github-fork-banner {
+	background: url(https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png) no-repeat center center;
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 149px;
+	height: 149px;
+	z-index: 50;
+}
+
+#header {
+	background-color: #f3f3f3;
+	background-image: linear-gradient(top, rgba(255,255,255, 0.2), rgba(255,255,255, 0.05));
+	border-bottom: 1px solid #ccc;
+	border-top: 2px solid #09f;
+	box-shadow: 0 2px 10px -2px rgba(0,0,0,0.2);
+	transition: line-height 0.3s linear;
+	vertical-align: middle;
+	text-indent: 20px;
+	z-index: 30;
+	line-height: 36px;
+	position: fixed;
+	width: 100%;
+}
+
+#sidebar {
+	background: #f7f7f7;
+	border-right: 1px solid rgba(0,0,0,0.2);
+	bottom: 0;
+	box-shadow: 0 0 20px #ccc;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 15px 0 30px 15px;
+	position: fixed;
+	top: 36px;
+	width: 250px;
+	z-index: 20;
+}
+#sidebar h4 {
+	
+}
+#sidebar a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	border-width: 0 0 1px 6px;
+	border-style: solid;
+	border-color: transparent;
+	padding: 2px 6px;
+	-moz-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+#sidebar a:hover {
+	border-color: transparent transparent #ccc #ccc;
+	color: #666;
+}
+#sidebar ul {
+}
+#sidebar ul li {
+	
+}
+#sidebar ul li ul {
+	padding: 0 0 0 6px;
+}
+#sidebar ul li h5 {
+	
+}
+#sidebar ul li ul {
+	
+}
+#sidebar ul li ul li {
+	
+}
+
+#body {
+	margin: 36px 0 0 250px;
+	padding: 15px 15px 15px 30px;
+}
+
+.body-wrapper {
+	width: 650px;
+}
+
+#body a {
+	color: #7bf;
+	text-decoration:none;
+	border-bottom: 1px solid transparent;
+	-moz-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+#body a:link {
+	color:#7bf;
+}
+#body a:visited {
+	color:#96cafe;
+}
+#body a:hover {
+	border-bottom: 1px solid #39f;
+	color:#39f;
+}
+#body a:active { /* selected link */
+	color:#aaa;
+}
+
+#body h2 .small {
+	font-size: 12px;
+}
+
+#body .download-table {
+	
+}
+#body .download-table .download-link {
+	
+}
+#body .download-table .download-detail {
+	font-style: italic;
+}
+
+.doc-block {
+	margin: 20px 0 40px;
+}
+.doc-block h4 {
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+	font-size: 16px;
+}
+.doc-block code {
+
+}
+.doc-block .doc-comment{
+	margin: 10px 0;
+}
+.doc-block .type-args {
+	margin: 10px 0;
+}
+.doc-block .type-args b {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+}
+.doc-block .type-args ol {
+
+}
+.doc-block .type-args ol li {
+	margin: 0 0 0 16px;
+}
+.doc-block .type-args ol li .def-arg-count {
+	font-size: 11px;
+}
+.doc-block .type-args ol li code {
+	padding: 0 2px;
+}
+.doc-block .type-return {
+	margin: 10px 0;
+}
+.doc-block .type-return b {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 0;
+}
+
+
+/* CHANGELOG */
+.changelog {
+	margin: 20px 0;
+}
+.changelog dt {
+	font-weight: bold;
+}
+.changelog dd {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0 0 0 10px;
+}

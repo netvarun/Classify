@@ -1,0 +1,113 @@
+<dl class="changelog">
+	<dt>v0.10.4</dt>
+		<dd>Pass arguments to onInit mutators</dd>
+
+	<dt>v0.10.3</dt>
+		<dd>Allow for mutators to be defined on a per class/namespace level</dd>
+		<dd>Ability to create mutators out of any object</dd>
+		<dd>Convert to grunt build system</dd>
+
+	<dt>v0.10.2</dt>
+		<dd>Fix requirejs and amd definitions, remove async autoloader to support it</dd>
+
+	<dt>v0.10.1</dt>
+		<dd>Android Mobile thinks typeof RegExp == "function"</dd>
+
+	<dt>v0.10.0</dt>
+		<dd>Allow init mutators to override constructor return value &amp; throw on scalar values</dd>
+		<dd>Adding null value to the prototype for observable properties</dd>
+		<dd>Observer properties don't need to go through objectDefineProperty</dd>
+
+	<dt>v0.9.10</dt>
+		<dd>BREAKING CHANGE, implements overrides extends when defining a class that institutes both</dd>
+		<dd>Use ES5 Object.create when possible</dd>
+
+	<dt>v0.9.9</dt>
+		<dd>Fix issue when extending non Classify objects overriding special properties</dd>
+		<dd>Global namespace is now a property of Classify on Classify.global</dd>
+		<dd>Updated Observers to have a 'on' alias and be able to bind events to be fired only once</dd>
+		<dd>Using Object.prototype.hasOwnProperty instead of .hasOwnProperty</dd>
+
+	<dt>v0.9.8</dt>
+		<dd>The called context is passed in as argument 1 for auto bound functions</dd>
+
+	<dt>v0.9.7</dt>
+		<dd>Refactoring internals so that adding and removing mutators can be externalized</dd>
+		<dd>Added mutator to auto bind functions to a class instance</dd>
+
+	<dt>v0.9.6</dt>
+		<dd>Fix case where classes are added as properties of other classes</dd>
+
+	<dt>v0.9.5</dt>
+		<dd>Added ability to add non wrapped methods to the class prototype</dd>
+
+	<dt>v0.9.4</dt>
+		<dd>Adding Travis-ci config file</dd>
+		<dd>Fix issue with IE6-9 when extending from non Classify classes</dd>
+		<dd>General bug fixes, removing support for IE&lt;6</dd>
+
+	<dt>v0.9.3</dt>
+		<dd>Renaming Class.Extend to Class.extend</dd>
+
+	<dt>v0.9.2</dt>
+		<dd>Ability to delay event listeners from being triggered in observers</dd>
+
+	<dt>v0.9.0</dt>
+		<dd>Ability to add statics and observers in a container</dd>
+
+	<dt>v0.8.5</dt>
+		<dd>Fix issue with adding overriding functions to a parent prototype</dd>
+
+	<dt>v0.8.0</dt>
+		<dd>Only fire observer listeners when the value has changed</dd>
+
+	<dt>v0.7.5</dt>
+		<dd>fixing parent invocation using applicate in default invoke method</dd>
+
+	<dt>v0.7.0</dt>
+		<dd>Ability to inherit from objects that are not created with Classify.create.</dd>
+		<dd>Allow Classify to be AMD compatible.</dd>
+		<dd>extend utility function that "extends" objects with properties from other objects in a shallow manner</dd>
+		<dd>fix issue with class invocation of "invoke" when class is a direct property of a namespace</dd>
+		<dd>"get" in namespace cascades into "GLOBAL" namespace classes</dd>
+		<dd>groundwork for ability to extend native and non create objects</dd>
+		<dd>Removing check for native objects (IE doesn't allow extending native objects).</dd>
+		<dd>throw Error objects instead of strings</dd>
+
+	<dt>v0.6.0</dt>
+		<dd>better detection of parameters for using Classify function ("namespace/classname" for retrieval)</dd>
+		<dd>minification optimizations</dd>
+		<dd>quicker access to the GLOBAL namespace</dd>
+
+	<dt>v0.4.0</dt>
+		<dd>ability to inherit the parent invoke method if not defined</dd>
+		<dd>exporting provide to the Classify object</dd>
+		<dd>GLOBAL namespace that all namespaced classes can inherit from</dd>
+
+	<dt>v0.3.5</dt>
+		<dd>ability to get a class definition synchronously and asynchronously in Classify</dd>
+		<dd>ability to test if a namespace exists</dd>
+		<dd>adding Classify.noConflict for conflict free usage of Classify</dd>
+
+	<dt>v0.3.0</dt>
+		<dd>using more standardized nomenclature</dd>
+		<dd>"_construct_" =&gt; "init"</dd>
+		<dd>"_invoke_" =&gt; "invoke"</dd>
+		<dd>"_apply_" =&gt; "applicate"</dd>
+		<dd>"_parent_" =&gt; "parent"</dd>
+		<dd>"_self_" =&gt; "self"</dd>
+
+	<dt>v0.2.0</dt>
+		<dd>ability to create and destory classes created within namespaces</dd>
+		<dd>better checking of enumerable keys in IE &lt; 9</dd>
+		<dd>bugfix on Extend functionality</dd>
+		<dd>Classify function endpoint has ability to to get namespace and create classes within the namespace</dd>
+		<dd>fixing issue with adding multiple properties to a class with the addProperty call</dd>
+		<dd>"get" in namespace takes in a callback and passes in the class</dd>
+		<dd>global references</dd>
+		<dd>namespacing functionality</dd>
+		<dd>only export classify to root object if it's a browser</dd>
+		<dd>pulled out the body of invoke to apply and default invoke will call apply</dd>
+		<dd>the exported object is created using the internal Create method</dd>
+		<dd>updated to "use strict";</dd>
+</dl>

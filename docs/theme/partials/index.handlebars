@@ -1,21 +1,56 @@
-    <div class="apidocs">
-        <div id="docs-main" class="content">
-            <p>
-            Browse to a module or class using the sidebar to view its API documentation.
-            </p>
+<div>
+	<h2 id="introduction">Classify.js</h2>
+	<p>
+		<a href="{{repoUrl}}">Classify.js</a> is a library that allows for cross browser and
+		cross platform Object Oriented Javascript class definitions using classical inheritance
+		patterns and namespaces behind the prototype syntax of javascript in an easy to use
+		interface function.
+	</p>
+	<p>
+		<a href="{{repoUrl}}">Classify.js</a> was created to simplify the creation of reusable
+		objects in a manner much like the traditional C based languages. It is a wrapper to
+		the Javascript prototype syntax of class object creation, instead classes are defined
+		in object notation much similar to single instance javascript objects.
+	</p>
+	<p>
+		<a href="{{repoUrl}}">Classify.js</a> also provides utilities methods that are useful
+		to javascript classes, such as auto binding methods without adding <code>Function.bind</code>,
+		observable properties with getters, setters, and event listeners, and namespacing
+		that can be easily accessed and externalized.
+	</p>
+</div>
 
-            <h2>Keyboard Shortcuts</h2>
+<div>
+	<h2 id="source">Source</h2>
+	<p>
+		This project is hosted on <a href="{{repoUrl}}">GitHub</a>.
+		You can report bugs and suggest new features on the <a href="{{repoUrl}}/issues">issues page</a>.
+	</p>
+	<p>
+		A complete Test Suite is available in the repository by running <code>./make.js unit</code>.
+	</p>
+</div>
 
-            <ul>
-                <li><p>Press <kbd>s</kbd> to focus the API search box.</p></li>
+<div>
+	<h2 id="download">Downloads <span class="small">(Right-click, and use "Save As")</span></h2>
+	<p>
+		Classify.js is distributed under the MIT license.
+	</p>
+	<table class="download-table">
+		<tr>
+			<th class="download-link"><a href="https://raw.github.com/weikinhuang/Classify/master/dist/classify.js">Development Version</a> (v{{projectVersion}})</th>
+			<td class="download-detail">Uncompressed and Fully Commented</td>
+		</tr>
+		<tr>
+			<th class="download-link"><a href="https://raw.github.com/weikinhuang/Classify/master/dist/classify.min.js">Production Version</a> (v{{projectVersion}})</th>
+			<td class="download-detail">Minified and Gzipped</td>
+		</tr>
+	</table>
+</div>
 
-                <li><p>Use <kbd>Up</kbd> and <kbd>Down</kbd> to select classes, modules, and search results.</p></li>
-
-                <li class="mac-only"><p>With the API search box or sidebar focused, use <kbd><span class="cmd">&#x2318;</span>-Left</kbd> or <kbd><span class="cmd">&#x2318;</span>-Right</kbd> to switch sidebar tabs.</p></li>
-
-                <li class="pc-only"><p>With the API search box or sidebar focused, use <kbd>Ctrl+Left</kbd> and <kbd>Ctrl+Right</kbd> to switch sidebar tabs.</p></li>
-            </ul>
-        </div>
-    </div>
-
-
+<div>
+	<h2 id="changelog">Change Log</h2>
+	<div>
+		{{>changelog}}
+	</div>
+</div>
