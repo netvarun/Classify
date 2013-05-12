@@ -22,7 +22,7 @@ addMutator("observable", {
 		 * @static
 		 * @for Classify.Class
 		 * @method addObservableProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.addObservableProperty = function(name, property) {
 			return klass.addProperty(name, property, mutator.propPrefix);
@@ -33,7 +33,7 @@ addMutator("observable", {
 		 * @static
 		 * @for Classify.Class
 		 * @method removeObservableProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.removeObservableProperty = function(name) {
 			return klass.removeProperty(mutator.propPrefix + name);

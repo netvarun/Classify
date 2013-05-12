@@ -13,7 +13,7 @@ addMutator("nowrap", {
 		 * @static
 		 * @for Classify.Class
 		 * @method addUnwrappedProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.addUnwrappedProperty = function(name, property) {
 			return klass.addProperty(name, property, mutatorPrefix);

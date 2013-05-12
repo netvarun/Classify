@@ -35,7 +35,7 @@ Base = (function() {
 	 *
 	 * @for Classify.Class
 	 * @method init
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	fn.prototype.init = function() {
 	};
@@ -259,7 +259,7 @@ removeProperty = function(klass, name, mutators) {
  * @static
  * @for Classify
  * @method create
- * @return {Class}
+ * @return {Classify.Class}
  */
 var create = function() {
 	var parent = Base,
@@ -366,7 +366,7 @@ var create = function() {
 	 * @static
 	 * @for Classify.Class
 	 * @method applicate
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	klass.applicate = function(a) {
 		var TempClass = function() {
@@ -382,7 +382,7 @@ var create = function() {
 	 * @static
 	 * @for Classify.Class
 	 * @method invoke
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	klass.invoke = methods.invoke || (parent.invoke && isFunction(parent.invoke) && !parent.invoke.__original_ ? parent.invoke : null) || store(function() {
 		return klass.applicate(arguments);
@@ -452,7 +452,7 @@ var create = function() {
 	 * @static
 	 * @for Classify.Class
 	 * @method extend
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	/**
 	 * Creates a new class that is a child of the current class
@@ -462,7 +462,7 @@ var create = function() {
 	 * @param {Object} definition The description of the class to be created
 	 * @for Classify.Class
 	 * @method extend
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	klass.extend = proto.extend = function() {
 		return create.apply(null, [ klass ].concat(argsToArray(arguments)));
@@ -502,7 +502,7 @@ var create = function() {
 	 * @static
 	 * @for Classify.Class
 	 * @method addProperty
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	klass.addProperty = function(name, property, prefix) {
 		var mutators = getMutators(klass);
@@ -524,7 +524,7 @@ var create = function() {
 	 * @static
 	 * @for Classify.Class
 	 * @method removeProperty
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	klass.removeProperty = function(name) {
 		removeProperty(klass, name, getMutators(klass));

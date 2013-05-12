@@ -50,7 +50,7 @@ namespaceProperties = {
 	 * @param {Object} definition The description of the class to be created
 	 * @for Classify.Namespace
 	 * @method create
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	create : function() {
 		// Get the arguments to be passed into the Class function
@@ -124,7 +124,7 @@ namespaceProperties = {
 	 * @param {String} classname Name of class to remove from this namespace
 	 * @for Classify.Namespace
 	 * @method destroy
-	 * @return {Namespace}
+	 * @return {Classify.Namespace}
 	 */
 	destroy : function(classname) {
 		// initializing the placeholder
@@ -197,7 +197,7 @@ namespaceProperties = {
 	 * @param {String} name The name of the class to retrieve
 	 * @for Classify.Namespace
 	 * @method get
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	get : function(name) {
 		var tmp;
@@ -229,7 +229,7 @@ namespaceProperties = {
 	 *            exist needs to be loaded
 	 * @for Classify.Namespace
 	 * @method setAutoloader
-	 * @return {Namespace}
+	 * @return {Classify.Namespace}
 	 */
 	setAutoloader : function(callback) {
 		// make sure the callback is a function
@@ -406,7 +406,7 @@ Namespace.from = function(name, obj) {
  * @static
  * @for Classify
  * @method getNamespace
- * @return {Namespace}
+ * @return {Classify.Namespace}
  */
 getNamespace = function(namespace) {
 	// if passed in object is already a namespace, just return it
@@ -451,7 +451,7 @@ destroyNamespace = function(namespace) {
  * @static
  * @for Classify
  * @method testNamespace
- * @return {Namespace}
+ * @return {Classify.Namespace}
  */
 testNamespace = function(namespace) {
 	var ns = namespace.split("."), l = ns.length, tmp;
@@ -469,7 +469,7 @@ testNamespace = function(namespace) {
  * @static
  * @for Classify
  * @method getGlobalNamespace
- * @return {Namespace}
+ * @return {Classify.Namespace}
  */
 getGlobalNamespace = function() {
 	return getNamespace(globalNamespace);

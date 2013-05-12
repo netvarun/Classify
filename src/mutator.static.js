@@ -13,7 +13,7 @@ addMutator("static", {
 		 * @static
 		 * @for Classify.Class
 		 * @method addStaticProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.addStaticProperty = function(name, property) {
 			return klass.addProperty(name, property, mutatorPrefix);
@@ -24,7 +24,7 @@ addMutator("static", {
 		 * @static
 		 * @for Classify.Class
 		 * @method removeStaticProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.removeStaticProperty = function(name) {
 			return klass.removeProperty(mutatorPrefix + name);

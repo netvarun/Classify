@@ -22,7 +22,7 @@ addMutator("bind", {
 		 * @static
 		 * @for Classify.Class
 		 * @method addBoundProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.addBoundProperty = function(name, property) {
 			return klass.addProperty(name, property, mutator.propPrefix);
@@ -33,7 +33,7 @@ addMutator("bind", {
 		 * @static
 		 * @for Classify.Class
 		 * @method removeBoundProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.removeBoundProperty = function(name) {
 			return klass.removeProperty(mutator.propPrefix + name);

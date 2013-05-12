@@ -248,8 +248,14 @@ module.exports = function(grunt) {
 				},
 
 				watch : {
-					files : [ "src/*.js", "test/*.js", "test/*.html", "Gruntfile.js" ],
-					tasks : "dev"
+					dev : {
+						files : [ "src/*.js", "test/*.js", "test/*.html", "Gruntfile.js" ],
+						tasks : "dev"
+					},
+					doc : {
+						files : [ "docs/theme/**/*" ],
+						tasks : "doc"
+					}
 				}
 			});
 

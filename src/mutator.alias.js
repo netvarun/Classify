@@ -14,7 +14,7 @@ addMutator("alias", {
 		 * @static
 		 * @for Classify.Class
 		 * @method addAliasedProperty
-		 * @return {Class}
+		 * @return {Classify.Class}
 		 */
 		klass.addAliasedProperty = function(name, property) {
 			return klass.addProperty(name, property, mutatorPrefix);

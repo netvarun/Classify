@@ -3,7 +3,6 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 html, body {
 	background: #fff;
 	color: #000;
@@ -15,23 +14,8 @@ code, pre, tt {
 	font: normal 12px/18px Consolas, Monaco, "Lucida Console", monospace;
 	white-space: pre;
 }
-code {
-	padding: 1px 2px;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-}
-p {
-	display: block;
-	margin: 20px 0;
-}
 
-h2 {
-	font-size: 18px;
-	margin: 20px 0;
-	font-weight: bold;
-}
-
+/* FORK ON GITHUB BANNER */
 .github-fork-banner {
 	background: url(https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png) no-repeat center center;
 	display: block;
@@ -43,6 +27,7 @@ h2 {
 	z-index: 50;
 }
 
+/* HEADER */
 #header {
 	background-color: #f3f3f3;
 	background-image: linear-gradient(top, rgba(255,255,255, 0.2), rgba(255,255,255, 0.05));
@@ -58,6 +43,8 @@ h2 {
 	width: 100%;
 }
 
+
+/* SIDEBAR */
 #sidebar {
 	background: #f7f7f7;
 	border-right: 1px solid rgba(0,0,0,0.2);
@@ -72,6 +59,9 @@ h2 {
 	width: 250px;
 	z-index: 20;
 }
+
+/*
+
 #sidebar h4 {
 	
 }
@@ -111,13 +101,29 @@ h2 {
 	
 }
 
+*/
+
+/* BODY */
 #body {
 	margin: 36px 0 0 250px;
 	padding: 15px 15px 15px 30px;
 }
 
-.body-wrapper {
-	width: 650px;
+h2 {
+	font-size: 18px;
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+p {
+	display: block;
+	margin: 20px 0;
+}
+p code {
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 1px;
+	padding: 0 3px;
 }
 
 #body a {
@@ -144,63 +150,13 @@ h2 {
 	color:#aaa;
 }
 
-#body h2 .small {
-	font-size: 12px;
+.body-wrapper {
+	width: 650px;
 }
 
-#body .download-table {
-	
-}
-#body .download-table .download-link {
-	
-}
+
 #body .download-table .download-detail {
 	font-style: italic;
-}
-
-.doc-block {
-	margin: 20px 0 40px;
-}
-.doc-block h4 {
-	display: block;
-	font-weight: bold;
-	border-bottom: 1px solid #ccc;
-	margin: 10px 0;
-	font-size: 16px;
-}
-.doc-block code {
-
-}
-.doc-block .doc-comment{
-	margin: 10px 0;
-}
-.doc-block .type-args {
-	margin: 10px 0;
-}
-.doc-block .type-args b {
-	display: block;
-	border-bottom: 1px solid #ccc;
-	margin: 10px 0;
-}
-.doc-block .type-args ol {
-
-}
-.doc-block .type-args ol li {
-	margin: 0 0 0 16px;
-}
-.doc-block .type-args ol li .def-arg-count {
-	font-size: 11px;
-}
-.doc-block .type-args ol li code {
-	padding: 0 2px;
-}
-.doc-block .type-return {
-	margin: 10px 0;
-}
-.doc-block .type-return b {
-	display: block;
-	border-bottom: 1px solid #ccc;
-	margin: 10px 0;
 }
 
 

@@ -130,7 +130,7 @@ var Observer = create({
 	 * @param {Object} value Mixed value to store internally
 	 * @for Classify.Observer
 	 * @method set
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	set : function(value) {
 		var original = this.value, context = this.context;
@@ -151,7 +151,7 @@ var Observer = create({
 	 * Starts the timers to call the registered event listeners
 	 * @for Classify.Observer
 	 * @method emit
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	emit : function() {
 		var self = this, args = argsToArray(arguments);
@@ -189,7 +189,7 @@ var Observer = create({
 	 * @throws Error
 	 * @for Classify.Observer
 	 * @method addListener
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	addListener : function(listener) {
 		// event listeners can only be functions
@@ -206,7 +206,7 @@ var Observer = create({
 	 * @throws Error
 	 * @for Classify.Observer
 	 * @method once
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	once : function(listener) {
 		// event listeners can only be functions
@@ -227,7 +227,7 @@ var Observer = create({
 	 * @throws Error
 	 * @for Classify.Observer
 	 * @method removeListener
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	removeListener : function(listener) {
 		// event listeners can only be functions
@@ -253,7 +253,7 @@ var Observer = create({
 	 * Remove all event listeners from this object
 	 * @for Classify.Observer
 	 * @method removeAllListeners
-	 * @return {Class}
+	 * @return {Classify.Class}
 	 */
 	removeAllListeners : function() {
 		// garbage collection
@@ -303,7 +303,7 @@ var Observer = create({
  * @see Classify.Observer.prototype.addListener
  * @for Classify.Observer
  * @method on
- * @return {Class}
+ * @return {Classify.Class}
  */
 Observer.prototype.on = Observer.prototype.addListener;
 
